@@ -12,6 +12,8 @@
 ###
 ### Notes:
 ###   - Always redirects output to stderr to separate from normal output.
+###   - If stderr is a terminal and `tput` is available, the "[INFO]" prefix is
+###     colored blue for better visibility.
 ###
 ### ============================================================================
 
@@ -35,7 +37,18 @@ fi
 ### The Snippet
 ### ----------------------------------------------------------------------------
 
-info() { printf >&2 '[INFO] %s\n' "$*"; }
+info() {
+  # Check if stderr is a terminal and tput is available
+  if [[ -t 2 ]] && command -v tput &>/dev/null; then
+    local BLUE
+    local RESET
+    BLUE="$(tput setaf 4)"
+    RESET="$(tput sgr0)"
+    printf >&2 '[%sINFO%s] %s\n' "${BLUE}" "${RESET}" "$*"
+  else
+    printf >&2 '[INFO] %s\n' "$*"
+  fi
+}
 
 ### ----------------------------------------------------------------------------
 ### Example Usage
