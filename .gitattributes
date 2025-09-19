@@ -1,0 +1,16 @@
+# Ensure all files are treated as text and normalized to LF
+* text=auto
+
+# Force LF for scripts and text files
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.gitignore text eol=lf
+*.editorconfig text eol=lf
+
+# Mark Markdown as linguist-language for proper highlighting
+*.md linguist-language=Markdown

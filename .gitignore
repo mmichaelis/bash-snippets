@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Editor swap/backup files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+*.old
+
+# VS Code
+.vscode/
+
+# Vim
+*.vim
+
+# Logs and output
+*.log
+*.out
+
+# Temporary folders
+/tmp/
+tmp/
+
+# ShellCheck output
+shellcheck.*
+
+# Other common ignores
+*.pid
+*.lock
