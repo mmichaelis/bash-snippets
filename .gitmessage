@@ -1,0 +1,30 @@
+# <type>(<scope>): <subject>
+#
+# <body>
+#
+# <footer>
+
+# Types:
+# feat:     A new feature
+# fix:      A bug fix
+# docs:     Documentation only changes
+# style:    Changes that do not affect the meaning of the code
+# refactor: A code change that neither fixes a bug nor adds a feature
+# perf:     A code change that improves performance
+# test:     Adding missing tests or correcting existing tests
+# chore:    Changes to the build process or auxiliary tools
+
+# Rules:
+# - Subject line (1st line): <= 50 characters
+# - Body: Wrap at 72 characters
+# - Use imperative mood in subject line
+# - Separate subject from body with blank line
+# - Use body to explain what and why vs. how
+
+# Example:
+# feat(snippets): add new cd navigation script
+#
+# Add a new bash script that provides enhanced cd functionality
+# with bookmark support and directory history.
+#
+# Closes #123

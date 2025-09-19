@@ -17,8 +17,14 @@ Desktop.ini
 *.orig
 *.old
 
-# VS Code
-.vscode/
+# VS Code - Selective ignore pattern
+# Share project settings but ignore personal/local files
+.vscode/*.code-workspace
+.vscode/sftp.json
+.vscode/settings.local.json
+.vscode/.history/
+.vscode/**/launch.local.json
+.vscode/temp.*
 
 # Vim
 *.vim

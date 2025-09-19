@@ -1,0 +1,24 @@
+{
+    "recommendations": [
+        // Essential for this project
+        "vivaxy.vscode-conventional-commits",
+        "eamodio.gitlens",
+
+        // Shell scripting support
+        "timonwong.shellcheck",
+        "foxundermoon.shell-format",
+        "ms-vscode.vscode-json",
+
+        // Git and documentation
+        "donjayamanne.githistory",
+        "yzhang.markdown-all-in-one",
+
+        // Code quality and formatting
+        "editorconfig.editorconfig",
+        "streetsidesoftware.code-spell-checker"
+    ],
+    "unwantedRecommendations": [
+        // Extensions that might conflict with our setup
+        "ms-vscode.vscode-typescript-next"
+    ]
+}

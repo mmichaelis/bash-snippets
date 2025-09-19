@@ -1,0 +1,55 @@
+{
+    // Project-specific scope for conventional commits
+    "conventionalCommits.scopes": [
+        "snippets"
+    ],
+
+    // Git Commit Message Configuration for Conventional Commits
+    // Enforces 50 char subject line and 72 char body line limits
+    "git.inputValidation": true,
+    "git.inputValidationLength": 72,
+    "git.inputValidationSubjectLength": 50,
+    "git.useCommitInputAsStashMessage": false,
+
+    // Prevent Auto-Commit Features
+    // These settings ensure manual confirmation for all Git operations
+    "git.enableSmartCommit": false,
+    "git.confirmSync": true,
+    "git.confirmForcePush": true,
+    "git.autofetch": false,
+    "git.autofetchPeriod": 0,
+    "git.autoStash": false,
+
+    // GitLens Configuration for Conventional Commits
+    // Enhances Git integration while working with conventional commits
+    "gitlens.codeLens.enabled": true,
+    "gitlens.codeLens.scopes": ["document", "containers"],
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitDisabledWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false
+    },
+
+    // Editor Configuration for Commit Messages
+    // Provides visual guides and formatting for commit message editor
+    "git.useEditorAsCommitInput": true,
+    "[git-commit]": {
+        "editor.rulers": [50, 72],          // Visual guides for line lengths
+        "editor.wordWrap": "off",           // Prevent automatic wrapping
+        "editor.wordWrapColumn": 72,        // Wrap at 72 characters when enabled
+        "editor.fontSize": 14,              // Readable font size
+        "editor.lineHeight": 1.5            // Improved readability
+    },
+
+    // Conventional Commits Helper
+    // Enables better autocomplete in commit message editor
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    }
+}
